@@ -12,5 +12,6 @@ public class Score : MonoBehaviour
      void Start()
     {
         scoreText.text = CurrentScore.ToString();
+        PlayerPrefs.SetInt("CurrentScore", CurrentScore);
     }
 }

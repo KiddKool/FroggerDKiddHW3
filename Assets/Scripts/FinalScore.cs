@@ -5,17 +5,14 @@ using UnityEngine.UI;
 
 public class FinalScore : MonoBehaviour
 {
-    public string LastScore; 
+    public Text LastScore; 
 
     void Start()
     {
         
-        PlayerPrefs.GetInt("CurrentScore");
+        LastScore.text = PlayerPrefs.GetInt("CurrentScore").ToString();
     }
 
 
-    void Update()
-    {
-        
-    }
+
 }

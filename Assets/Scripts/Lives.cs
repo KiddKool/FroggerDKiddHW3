@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class Lives : MonoBehaviour
 {
-
+    
+    public Text FrogLife;
 
     private void Start()
     {
-         PlayerPrefs.SetInt("Life",3);
-        PlayerPrefs.GetInt("Life");
+         
+       
+        FrogLife.text = PlayerPrefs.GetInt("Lives").ToString();
+
     }
+
+
 
 
 
